@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Boheom</string>
+    
+    <string name="landing_message_board_game">보드게임</string>
+    <string name="landing_message_explain">보드게임을 하고 싶은데 할 사람이 없거나 찾고 있으신가요? 고민하지 마세요!</string>
+    <string name="start">시작하기</string>
+    <string name="already_start">이미 모험을 시작하셨다면,</string>
+    <string name="sign_in"> 로그인</string>
 </resources>
