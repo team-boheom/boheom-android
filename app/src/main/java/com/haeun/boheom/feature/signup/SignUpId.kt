@@ -52,14 +52,14 @@ internal fun SignUpId(
     ) {
         Text(
             modifier = Modifier.padding(top = 70.dp),
-            text = stringResource(id = R.string.what_are_you_nickname),
+            text = stringResource(id = R.string.enter_your_id),
             fontFamily = pretendardFamily,
             fontWeight = FontWeight.Bold,
             fontSize = 30.sp,
             color = Black,
         )
         Text(
-            text = stringResource(id = R.string.what_are_you_nickname_description),
+            text = "닉네임 + 님의 아이디를 알려주세요.",
             fontFamily = pretendardFamily,
             fontWeight = FontWeight.Light,
             fontSize = 16.sp,
@@ -72,7 +72,11 @@ internal fun SignUpId(
         )
         Spacer(modifier = Modifier.weight(1f))
         Text(
-            modifier = Modifier.align(Alignment.CenterHorizontally),
+            modifier = Modifier
+                .align(Alignment.CenterHorizontally)
+                .clickable {
+                    /*TODO 이전*/
+                },
             text = stringResource(id = R.string.before),
             fontFamily = pretendardFamily,
             fontWeight = FontWeight.Medium,
