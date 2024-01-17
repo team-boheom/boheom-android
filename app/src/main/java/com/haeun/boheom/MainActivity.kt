@@ -40,7 +40,9 @@ private fun BoheomApp() {
         }
 
         composable(AppNavigationItem.SignIn.route) {
-            SignIn()
+            SignIn(
+                moveToSignUp = { navController.navigate(AppNavigationItem.SignUp.route) }
+            )
         }
 
         composable(AppNavigationItem.SignUp.route) {
