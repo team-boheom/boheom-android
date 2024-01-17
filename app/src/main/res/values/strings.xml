@@ -4,9 +4,9 @@
     <string name="landing_message_board_game">보드게임</string>
     <string name="landing_message_explain">보드게임을 하고 싶은데 할 사람이 없거나 찾고 있으신가요? 고민하지 마세요!</string>
     <string name="start">시작하기</string>
-    
-    <string name="sign_up">회원가입</string>
-    <string name="dont_have_account_yet">아직 계정이 없으신가요? </string>
+
+    <string name="next">다음</string>
+    <string name="before">이전으로 돌아가기</string>
 
 
     <!--sign in-->
@@ -24,5 +24,17 @@
     <string name="enter_id">아이디를 입력하세요.</string>
     <string name="password">비밀번호</string>
     <string name="enter_password">비밀번호를 입력하세요.</string>
+
+    <!--sign up-->
+    <string name="sign_up">회원가입</string>
+    <string name="dont_have_account_yet">아직 계정이 없으신가요? </string>
+
+    <string name="what_are_you_nickname">닉네임이 무엇인가요?</string>
+    <string name="what_are_you_nickname_description">원하는 닉네임을 입력해주세요.</string>
+
+    <string name="nickname">닉네임</string>
+    <string name="enter_nickname">닉네임을 입력하세요.</string>
+
+
 
 </resources>
