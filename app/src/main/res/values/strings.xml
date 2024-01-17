@@ -34,6 +34,14 @@
 
     <string name="nickname">닉네임</string>
     <string name="enter_nickname">닉네임을 입력하세요.</string>
+    
+    <string name="enter_your_id">아이디를 입력하세요!</string>
+    
+    <string name="what_are_you_password">비밀번호가 무엇인가요?</string>
+    <string name="what_are_you_password_description">이제 마지막입니다. 비밀번호를 알려주세요!</string>
+
+    <string name="sign_up_success">회원가입 완료!</string>
+    <string name="now_start_adventure">이제 모험을 시작해볼까요?</string>
 
 
 
