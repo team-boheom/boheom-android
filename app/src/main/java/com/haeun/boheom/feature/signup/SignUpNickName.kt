@@ -73,7 +73,10 @@ internal fun SignUpNickname(
         Spacer(modifier = Modifier.weight(1f))
         Text(
             modifier = Modifier
-                .align(Alignment.CenterHorizontally),
+                .align(Alignment.CenterHorizontally)
+                .clickable {
+                    /*TODO 이전*/
+                },
             text = stringResource(id = R.string.before),
             fontFamily = pretendardFamily,
             fontWeight = FontWeight.Medium,
