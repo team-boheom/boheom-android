@@ -2,6 +2,9 @@ package com.haeun.boheom.navigation
 
 sealed class AppNavigationItem(val route: String) {
     object SignIn: AppNavigationItem("signIn")
-    object SignUp: AppNavigationItem("signUp")
+    object SignUpNickname: AppNavigationItem("signUpNickname")
+    object SignUpId: AppNavigationItem("signUpId")
+    object SignUpPassword: AppNavigationItem("signUpPassword")
     object Landing: AppNavigationItem("landing")
+
 }

@@ -9,7 +9,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.haeun.boheom.feature.landing.Landing
 import com.haeun.boheom.feature.signin.SignIn
-import com.haeun.boheom.feature.signup.SignUp
+import com.haeun.boheom.feature.signup.SignUpId
+import com.haeun.boheom.feature.signup.SignUpNickname
+import com.haeun.boheom.feature.signup.SignUpPassword
 import com.haeun.boheom.navigation.AppNavigationItem
 import com.haeun.boheom.ui.theme.BoheomTheme
 
@@ -35,18 +37,30 @@ private fun BoheomApp() {
         composable(AppNavigationItem.Landing.route) {
             Landing(
                 moveToSignIn = { navController.navigate(AppNavigationItem.SignIn.route) },
-                moveToSignUp = { navController.navigate(AppNavigationItem.SignUp.route) },
+                moveToSignUp = { navController.navigate(AppNavigationItem.SignUpNickname.route) },
             )
         }
 
         composable(AppNavigationItem.SignIn.route) {
             SignIn(
-                moveToSignUp = { navController.navigate(AppNavigationItem.SignUp.route) }
+                moveToSignUp = { navController.navigate(AppNavigationItem.SignUpNickname.route) }
             )
         }
 
-        composable(AppNavigationItem.SignUp.route) {
-            SignUp()
+        composable(AppNavigationItem.SignUpNickname.route) {
+            SignUpNickname(
+                moveToSignUpId = { navController.navigate(AppNavigationItem.SignUpId.route) }
+            )
+        }
+
+        composable(AppNavigationItem.SignUpId.route) {
+            SignUpId(
+                moveToSignUpPassword = { navController.navigate(AppNavigationItem.SignUpPassword.route) }
+            )
+        }
+
+        composable(AppNavigationItem.SignUpPassword.route) {
+            SignUpPassword()
         }
     }
 }
