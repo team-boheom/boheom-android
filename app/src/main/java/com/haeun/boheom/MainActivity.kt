@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.haeun.boheom.feature.landing.Landing
+import com.haeun.boheom.feature.main.Main
 import com.haeun.boheom.feature.signin.SignIn
 import com.haeun.boheom.feature.signup.SignUpId
 import com.haeun.boheom.feature.signup.SignUpNickname
@@ -33,7 +34,7 @@ private fun BoheomApp() {
 
     NavHost(
         navController = navController,
-        startDestination = AppNavigationItem.Landing.route,
+        startDestination = AppNavigationItem.SignUpSuccess.route,
     ) {
         composable(AppNavigationItem.Landing.route) {
             Landing(
@@ -59,7 +60,11 @@ private fun BoheomApp() {
         }
 
         composable(AppNavigationItem.SignUpSuccess.route) {
-            SignUpSuccess()
+            SignUpSuccess(moveToMain = {navController.navigate(AppNavigationItem.Main.route)})
+        }
+
+        composable(AppNavigationItem.Main.route) {
+            Main()
         }
     }
 }
