@@ -84,38 +84,11 @@ internal fun SignUpId(
             fontSize = 12.sp,
         )
         Spacer(modifier = Modifier.height(15.dp))
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .clip(shape = RoundedCornerShape(8.dp))
-                .border(
-                    width = 1.dp,
-                    color = if (id.value.isEmpty()) {
-                        Gray300
-                    } else {
-                        Main
-                    },
-                )
-                .clickable(
-                    onClick = moveToSignUpPassword,
-                )
-                .background(
-                    color = if (id.value.isEmpty()) {
-                        Gray300
-                    } else {
-                        Main
-                    },
-                )
-                .padding(vertical = 14.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
-        ) {
-            Text(
-                text = stringResource(id = R.string.next),
-                color = White,
-                fontFamily = pretendardFamily,
-                fontWeight = FontWeight.Medium,
-            )
-        }
+        BasicButton(
+            onClick = moveToSignUpPassword,
+            value = id.value,
+            text = stringResource(id = R.string.next),
+        )
         Spacer(modifier = Modifier.height(20.dp))
     }
 }
@@ -168,4 +141,45 @@ private fun IdField(
             }
         },
     )
+}
+
+@Composable
+fun BasicButton(
+    onClick: () -> Unit,
+    value: String,
+    text: String,
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(shape = RoundedCornerShape(8.dp))
+            .border(
+                width = 1.dp,
+                color = if (value.isEmpty()) {
+                    Gray300
+                } else {
+                    Main
+                },
+            )
+            .clickable(
+                onClick = onClick,
+            )
+            .background(
+                color = if (value.isEmpty()) {
+                    Gray300
+                } else {
+                    Main
+                },
+            )
+            .padding(vertical = 14.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
+        Text(
+            text = text,
+            color = White,
+            fontFamily = pretendardFamily,
+            fontWeight = FontWeight.Medium,
+        )
+    }
+    Spacer(modifier = Modifier.height(20.dp))
 }
