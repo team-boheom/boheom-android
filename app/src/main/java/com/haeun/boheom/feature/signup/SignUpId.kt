@@ -146,7 +146,7 @@ private fun IdField(
 @Composable
 fun BasicButton(
     onClick: () -> Unit,
-    value: String,
+    value: String?,
     text: String,
 ) {
     Column(
@@ -155,7 +155,7 @@ fun BasicButton(
             .clip(shape = RoundedCornerShape(8.dp))
             .border(
                 width = 1.dp,
-                color = if (value.isEmpty()) {
+                color = if (value?.isEmpty() == true) {
                     Gray300
                 } else {
                     Main
@@ -165,7 +165,7 @@ fun BasicButton(
                 onClick = onClick,
             )
             .background(
-                color = if (value.isEmpty()) {
+                color = if (value?.isEmpty() == true) {
                     Gray300
                 } else {
                     Main
