@@ -4,9 +4,15 @@
     <string name="landing_message_board_game">보드게임</string>
     <string name="landing_message_explain">보드게임을 하고 싶은데 할 사람이 없거나 찾고 있으신가요? 고민하지 마세요!</string>
     <string name="start">시작하기</string>
+    <string name="board_game">보드게임</string>
+    <string name="start_adventure">모험을 시작해볼까요?</string>
 
     <string name="next">다음</string>
     <string name="before">이전으로 돌아가기</string>
+
+    <string name="profile_image">프로필 이미지</string>
+
+    <string name="icon_eye">눈 아이콘 이미지</string>
 
 
     <!--sign in-->
@@ -46,5 +52,8 @@
     <string name="start_sign_in">로그인 하러가기</string>
 
     <string name="check_password">비밀번호 확인</string>
+    
+    <!--main-->
+    <string name="recent_recruitment_post">최근 모집글 ⏰</string>
 
 </resources>
